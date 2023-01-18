@@ -7,7 +7,7 @@ namespace MathFunctionProgram
         {
             Console.WriteLine("Welcome to Math Based Program ");
             Console.WriteLine("Choose any option to perform");
-            Console.WriteLine("1:Reactangle\n2:Triangle");
+            Console.WriteLine("1:Reactangle\n2:Triangle\n3:Celsius");
             int options = Convert.ToInt32(Console.ReadLine());
             switch(options)
             {
@@ -31,6 +31,16 @@ namespace MathFunctionProgram
                     Triangle triangle = new Triangle(side1, side2, side3);
                     triangle.AreaOfTraingle();
                     break;
+                case 3:
+                    Console.WriteLine("Please choose degree in celsius: ");
+                    int celsius = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please choose a fahreheit");
+                    int fahreheit = Convert.ToInt32(Console.ReadLine());
+                    Celsius celsius1 = new Celsius(celsius, fahreheit);
+                    celsius1.CelsiusToFahreheit();
+                    break;
+
+                         
                 default:
                     Console.WriteLine("choose valid number");
                     break;
