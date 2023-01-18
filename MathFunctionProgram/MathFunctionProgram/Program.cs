@@ -7,7 +7,7 @@ namespace MathFunctionProgram
         {
             Console.WriteLine("Welcome to Math Based Program ");
             Console.WriteLine("Choose any option to perform");
-            Console.WriteLine("1:Reactangle\n2:Triangle\n3:Celsius");
+            Console.WriteLine("1:Reactangle\n2:Triangle\n3:Celsius\n4:SquareOfTwoNumber");
             int options = Convert.ToInt32(Console.ReadLine());
             switch(options)
             {
@@ -39,6 +39,15 @@ namespace MathFunctionProgram
                     Celsius celsius1 = new Celsius(celsius, fahreheit);
                     celsius1.CelsiusToFahreheit();
                     break;
+                case 4:
+                    Console.WriteLine("Plase enter first Number: ");
+                    int a = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please enter second Number: ");
+                    int b = Convert.ToInt32(Console.ReadLine());
+                    SquareFormula squareFormula = new SquareFormula(a, b);
+                    squareFormula.SquareOfTwoNumber();
+                    break;
+
 
                          
                 default:
